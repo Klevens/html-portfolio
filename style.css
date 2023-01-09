@@ -8,6 +8,12 @@
     padding: 0;
 }
 
+:root {
+    --var-pf-color: #1CB698;
+    --var-white-text: #fff;
+    --var-bg-color: #1e2326;
+}
+
 html{
     /* permite deslizar cuando hago click en los links del menu*/
     scroll-behavior: smooth;
@@ -16,7 +22,7 @@ html{
 /* MENU */
 
 .header-container{
-    background: #1e2326;
+    background: var(--var-bg-color);
     position: fixed;
     width: 100%;
     top: 0;
@@ -37,7 +43,7 @@ html{
 .header-container header .logo a{
  font-family: "Righteous";
  font-size: 36px;
- color: #1CB698;
+ color: var(--var-pf-color) ;
  text-decoration: none;
 }
 
@@ -52,7 +58,7 @@ html{
 
 .header-container header nav ul li a {
     text-align: none;
-    color: #fff;
+    color: var(--var-white-text);
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -60,16 +66,75 @@ html{
 }
 
 .header-container header nav ul li a:hover {
-    color: #1CB698;
+    color: var(--var-pf-color);
 }
 
 /* MENU RESPONSIVE*/
 
 .nav-responsive {
-    background-color: #1CB698;
-    color: #fff;
+    background-color: var(--var-pf-color);
+    color: var(--var-white-text);
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+
+/* SECCION INICIO*/
+
+.inicio {
+    /* background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+    url(./img/inicio-background.png); */
+    background-size: cover;
+    height: 100vh;
+    color: var(--var-white-text);
+    display: flex;
+    align-items: center;
+}
+
+.inicio .content-banner {
+    padding: 20px;
+    background-color: var(--var-bg-color);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .content-banner img {
+    margin-top: 40px;
+    border: 10px solid var(--var-pf-color);
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .content-banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+}
+.inicio .content-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .content-banner .redes a {
+    color: var(--var-white-text);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--var-white-text);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+
+.inicio .content-banner .redes a:hover {
+
+    background-color: var(--var-pf-color);
 }

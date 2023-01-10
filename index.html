@@ -1,71 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- MENU HEADER-->
     <div class="header-container">
-        <header>
-            <div class="logo">
-                <a href="#">Klevens</a>
-            </div>
+      <header>
+        <div class="logo">
+          <a href="#">Klevens</a>
+        </div>
 
-            <nav id="nav">
-                <ul>
-                    <li><a href="#start">INICIO</a></li>
-                    <li><a href="#about">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACTO</a></li>
+        <nav id="nav">
+          <ul>
+            <li><a href="#start">INICIO</a></li>
+            <li><a href="#about">SOBRE MI</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#curriculum">CURRICULUM</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
+          </ul>
+        </nav>
 
-                </ul>
-            </nav>
-
-            <div class="nav-responsive">
-                <i class="fa-solid fa-bars"></i>
-
-            </div>
-        </header>
+        <div class="nav-responsive">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
     </div>
 
-     <!-- SECCION INICIO-->
+    <!-- SECCION INICIO-->
 
-     <section id="inicio" class="inicio">
-        
-        <div class="content-banner">
-            <div class="img-container">
-                <img src="https://via.placeholder.com/180x180.png?text=Mi+Imagen" alt="aBanner">
-            </div>
-            <h1>KELVIN REYES</h1>
-            <H2>Ingeniero en Sistemas - Full Stack Developer</H2>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-
-            </div>
+    <section id="inicio" class="inicio">
+      <div class="content-banner">
+        <div class="img-container">
+          <img
+            src="https://via.placeholder.com/180x180.png?text=Mi+Imagen"
+            alt="aBanner"
+          />
         </div>
-        
+        <h1>KELVIN REYES</h1>
+        <h2>Ingeniero en Sistemas - Full Stack Web Developer</h2>
+        <div class="redes">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
 
-     </section>
+    <!-- SECCION ABOUT -->
+
+    <section id="about" class="about">
+      <div class="content-seccion">
+        <h2>Sobre mi</h2>
+        <p><span>Hola, soy Kelvin Reyes</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum voluptates doloribus iure alias minima, vitae optio impedit adipisci magni doloremque voluptate in consequuntur similique possimus inventore soluta eius placeat quas!</p>
+      </div>
+
+      <div class="fila">
+
+        <!--DATOS PERSONALES-->
+        <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+                <li>
+                    <strong>Télefono</strong>
+                    1999
+                </li>
+                <li>
+                    <strong>Email</strong>
+                    algo@ejemplo.com
+                </li>
+                <li>
+                    <strong>Website</strong>
+                    www.estesitio.com
+                </li>
+                <li>
+                    <strong>Cargo</strong>
+                    <span>Freelance</span>
+                </li>
+            </ul>
+
+        </div>
+
+        <!--INTERESES-->
+        <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+                <div class="intereses">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>JUEGOS</span>
+                </div>
+
+                <div class="intereses">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>MUSICA</span>
+                </div>
+                <div class="intereses">
+                    <i class="fa-solid fa-plane"></i>
+                    <span>VIAJES</span>
+                </div>
+            </div>
+
+        </div>
+
+      </div>
+
+        <button>
+            Descargar CV
+            <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+
+    </section>
 
 
-
-
-          <!-- SECCION ABOUT -->
-
-          <section id="inicio" class="inicio">
-            
-    
-         </section>
-    
-</body>
+  </body>
 </html>

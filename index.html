@@ -24,16 +24,14 @@
 
         <nav id="nav">
           <ul>
-            <li><a href="#start">INICIO</a></li>
-            <li><a href="#about">SOBRE MI</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#curriculum">CURRICULUM</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACTO</a></li>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#about" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
           </ul>
         </nav>
 
-        <div class="nav-responsive">
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
@@ -42,88 +40,209 @@
     <!-- SECCION INICIO-->
 
     <section id="inicio" class="inicio">
-      <div class="content-banner">
-        <div class="img-container">
-          <img
-            src="https://via.placeholder.com/180x180.png?text=Mi+Imagen"
-            alt="aBanner"
-          />
+   
+        <div class="content-banner">
+          <div class="img-container">
+            <img
+              src="https://via.placeholder.com/180x180.png?text=Mi+Imagen"
+              alt="aBanner"
+            />
+          </div>
+          <h1>KELVIN REYES</h1>
+          <h2>Ingeniero en Sistemas - Full Stack Web Developer</h2>
+          <div class="redes">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
         </div>
-        <h1>KELVIN REYES</h1>
-        <h2>Ingeniero en Sistemas - Full Stack Web Developer</h2>
-        <div class="redes">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
+
+        <div class="flechita">
+          <i class="fa-solid fa-chevron-up"></i>
         </div>
-      </div>
+
     </section>
 
-    <!-- SECCION ABOUT -->
 
+    <!-- SECCION ABOUT -->
     <section id="about" class="about">
       <div class="content-seccion">
         <h2>Sobre mi</h2>
-        <p><span>Hola, soy Kelvin Reyes</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum voluptates doloribus iure alias minima, vitae optio impedit adipisci magni doloremque voluptate in consequuntur similique possimus inventore soluta eius placeat quas!</p>
+        <p>
+          <span>Hola, soy Kelvin Reyes</span> Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Dolorum voluptates doloribus iure alias
+          minima, vitae optio impedit adipisci magni doloremque voluptate in
+          consequuntur similique possimus inventore soluta eius placeat quas!
+        </p>
       </div>
 
       <div class="fila">
-
         <!--DATOS PERSONALES-->
         <div class="col">
-            <h3>Datos Personales</h3>
-            <ul>
-                <li>
-                    <strong>Télefono</strong>
-                    1999
-                </li>
-                <li>
-                    <strong>Email</strong>
-                    algo@ejemplo.com
-                </li>
-                <li>
-                    <strong>Website</strong>
-                    www.estesitio.com
-                </li>
-                <li>
-                    <strong>Cargo</strong>
-                    <span>Freelance</span>
-                </li>
-            </ul>
-
+          <h3>Datos de Contacto</h3>
+          <ul>
+            <li>
+              <strong>Télefono</strong>
+              1999
+            </li>
+            <li>
+              <strong>Email</strong>
+              algo@ejemplo.com
+            </li>
+            <li>
+              <strong>Website</strong>
+              www.estesitio.com
+            </li>
+          </ul>
         </div>
 
         <!--INTERESES-->
         <div class="col">
-            <h3>Intereses</h3>
-            <div class="contenedor-intereses">
-                <div class="intereses">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <span>JUEGOS</span>
-                </div>
-
-                <div class="intereses">
-                    <i class="fa-solid fa-headphones"></i>
-                    <span>MUSICA</span>
-                </div>
-                <div class="intereses">
-                    <i class="fa-solid fa-plane"></i>
-                    <span>VIAJES</span>
-                </div>
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="intereses">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>JUEGOS</span>
             </div>
 
+            <div class="intereses">
+              <i class="fa-solid fa-headphones"></i>
+              <span>MUSICA</span>
+            </div>
+            <div class="intereses">
+              <i class="fa-solid fa-plane"></i>
+              <span>VIAJES</span>
+            </div>
+          </div>
         </div>
-
       </div>
 
-        <button>
-            Descargar CV
-            <i class="fa-solid fa-download"></i>
-            <span class="overlay"></span>
-        </button>
-
+      <button>
+        Descargar CV
+        <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
     </section>
 
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+      <div class="content-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!--Technical Skills-->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!--SECCION PORTFOLIO-->
+    <section class="portfolio" id="portfolio">
+      <div class="content-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img
+              src="https://via.placeholder.com/180x180.png?text=Proyecto"
+              alt="Proyecto"
+            />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="https://via.placeholder.com/180x180.png?text=Proyecto"
+              alt="Proyecto"
+            />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="https://via.placeholder.com/180x180.png?text=Proyecto"
+              alt="Proyecto"
+            />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="https://via.placeholder.com/180x180.png?text=Proyecto"
+              alt="Proyecto"
+            />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="https://via.placeholder.com/180x180.png?text=Proyecto"
+              alt="Proyecto"
+            />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="https://via.placeholder.com/180x180.png?text=Proyecto"
+              alt="Proyecto"
+            />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
